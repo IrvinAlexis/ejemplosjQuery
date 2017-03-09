@@ -8,14 +8,27 @@
     </head>
         <h1>Hola jquery</h1>
         <p>Parrafo</p>
+        <button class="boton">Boton 1</button>
         <h2>Encabezado 2</h2>
         <p>Parrafo 2</p>
+        <button class="boton">Boton 2</button>
         <h3>Encabezado 3</h3>
         <p>Parrafo 3</p>
+        <button>Boton 3</button>
 
         <script>
-            jQuery('p:last').text("Modificado desde jQuery");
-            jQuery('h3:last').css("color","rgb(255,0,0)");
+           /* $(function () {
+                $('#boton1').click(function () {  
+                    alert('hola'+$(this).text());
+                })
+            })*/
+
+            $(function () {  
+                $('button').on('click','boton',{
+                    propiedad1 = 'valor1',
+                    propiedad2 = 'valor2'
+                })
+            })
         </script>
     <body>
     </body>
