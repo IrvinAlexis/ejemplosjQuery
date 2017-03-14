@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Estructura</title>
+        <meta charset="utf-8">
+        <script src="jquery-3.1.1.min.js"> </script>
+        <script src="holajquer.js"> </script>
+    </head>
+        <h1>Ejemplos de efectos en jQuery</h1>
+        <h2>Ocultar y mostrar</h2>
+        <button id="btn-ocultar">Ocultar</button>
+        <button id="btn-mostrar">Mostrar</button>
+        <button id="btn-alterna">Alternar</button>
+        <p>rkpkwokfpokopfk wemfpmwefmpwemc vfkfkkdskf wekfokwdefkokfcpds powdevcomdsv</p>
+
+        <h2>Fundido</h2>
+        <button id="btn-desaparecer">fadeOut</button>
+        <button id="btn-aparercer">fadeIn</button>
+        <button id="btn-alternaFundido">fadeToggle</button>
+        <button id="btn-desaparecehasta">fadeTo</button>
+        <p>rkpkwokfpokopfk wemfpmwefmpwemc vfkfkkdskf wekfokwdefkokfcpds powdevcomdsv</p>
+
+        <script>
+            $(function () {  
+                $('#btn-ocultar').click(function(){
+                    $('p').hide(1000);
+                })
+            })
+
+             $(function () {  
+                $('#btn-mostrar').click(function(){
+                    $('p').show(1000);
+                })
+            })
+
+             $(function () {  
+                $('#btn-alterna').click(function(){
+                    $('p:last').toggle(1000);
+                })
+            })
+
+            $(function () {  
+                $('#btn-desaparecer').click(function(){
+                    $('p:last').fadeOut(1000);
+                })
+            })
+
+             $(function () {  
+                $('#btn-aparercer').click(function(){
+                    $('p:last').fadeIn(1000);
+                })
+            })
+
+             $(function () {  
+                $('#btn-alternaFundido').click(function(){
+                    $('p:last').fadeToggle(1000);
+                })
+            })
+
+            $(function () {  
+                $('#btn-desaparecehasta').click(function(){
+                    $('p:last').fadeTo('slow' , 0.5);
+                })
+            })
+        </script>
+    <body>
+    </body>
+</html>
