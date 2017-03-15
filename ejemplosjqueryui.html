@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Estructura</title>
+        <meta charset="utf-8">
+        <script src="jquery-3.1.1.min.js"> </script>
+        <script src="jquery-ui.js"> </script>
+        <link rel="stylesheet" href="jquery-ui.css">
+    </head>
+    <body>
+       <h1>Ejemplo de jQuery UI</h1>
+       <h2>Ejemplos de Acordeon</h2>
+       <div id="Acordeon">
+           <h3>Encabezado 1</h3>
+           <div>
+               <p>
+                   rejhnuenuher
+                   erfgveeergvre
+                   revcfggefefvfv
+                   vbevbfdbgdfgdg
+               </p>
+           </div>
+             <h3>Encabezado 1</h3>
+           <div>
+               <p>
+                   rejhnuenuher
+                   erfgveeergvre
+                   revcfggefefvfv
+                   vbevbfdbgdfgdg
+               </p>
+           </div>
+             <h3>Encabezado 1</h3>
+           <div>
+               <p>
+                   rejhnuenuher
+                   erfgveeergvre
+                   revcfggefefvfv
+                   vbevbfdbgdfgdg
+               </p>
+           </div>
+       </div>
+       <h2>ejemplo de pestañas</h2>
+       <div id="pestañas">
+           <ul>
+               <li>
+                   <a href="#contenido1">pestañas 1</a>
+               </li>
+               <li>
+                   <a href="#contenido2">pestañas 2</a>
+               </li>
+               <li>
+                   <a href="#contenido3">pestañas 3</a>
+               </li>
+               <div id="contenido1">
+                   <p>
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde perspiciatis dignissimos rerum saepe officia, quasi quaerat, maiores repellendus, tempora mollitia ipsa ratione illum est. Quas tenetur quod, vitae fuga! Libero?
+                   </p>
+               </div>
+               <div id="contenido2">
+                   <p>
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde perspiciatis dignissimos rerum saepe officia, quasi quaerat, maiores repellendus, tempora mollitia ipsa ratione illum est. Quas tenetur quod, vitae fuga! Libero?
+                   </p>
+               </div>
+               <div id="contenido3">
+                   <p>
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde perspiciatis dignissimos rerum saepe officia, quasi quaerat, maiores repellendus, tempora mollitia ipsa ratione illum est. Quas tenetur quod, vitae fuga! Libero?
+                   </p>
+               </div>
+           </ul>
+       </div>
+       <script>
+           $(function(){
+               $('#Acordeon').acordion();
+               $('#pestañas').tabs();
+           })
+       </script>
+    </body>
+</html>
